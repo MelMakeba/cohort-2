@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Responsiveness practice</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    
+    <header>
+        <h1>Responsive Web Design</h1>
+        <p>Just a practice on CSS in class</p>
+    </header>
+    <nav>
+        <button class="burger"> = </button>
+        <ul class="nav-links">
+            <li> Home</li>
+            <li>About </li>
+            <li> Contact</li>
+            <li> Products</li>
+            <li> Blog</li>
+        </ul>
+    </nav>
+
+    <script>
+        document.getElementsByClassName('burger')[0].addEventListener('click', function() {
+            document.getElementsByClassName('nav-links')[0].classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
